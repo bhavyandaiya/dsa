@@ -1,11 +1,7 @@
-n = 5873
+import math
+n = 5438
 
 def count_digits(n):
-    num= n
-    c= 0
-    while num>0:
-        c+= 1
-        num= num//10
-    print(c)
+    return math.floor(math.log10(n)) + 1
 
 print(count_digits(n))
